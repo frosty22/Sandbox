@@ -1,5 +1,6 @@
 {
 	"name": "frosty22/sandbox",
+	"type": "project",
 	"description": "Pre-packaged Nette Framework project with Doctine 2, Kdyby components, basic configured structure for your application.",
 	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
 	"authors": [
