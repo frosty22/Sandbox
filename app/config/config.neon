@@ -1,0 +1,85 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+common:
+	parameters:
+
+	php:
+		date.timezone: Europe/Prague
+		session.name: "SESSIONID"
+		# zlib.output_compression: yes
+
+	nette:
+		application:
+			errorPresenter: Error
+			mapping:
+				*: App\*Module\*Presenter
+
+		session:
+			expiration: 14 days
+
+
+	extensions:
+		twBootstrapRenderer: Kdyby\BootstrapFormRenderer\DI\RendererExtension
+		console: Kdyby\Console\DI\ConsoleExtension
+		events: Kdyby\Events\DI\EventsExtension
+		doctrine: Kdyby\Doctrine\DI\OrmExtension
+		replicator: Kdyby\Replicator\DI\ReplicatorExtension
+		#ale: Ale\DI\AleExtension
+
+
+	services:
+
+		routerFactory:
+			class: App\RouterFactory
+
+		router: @routerFactory::createRouter
+
+
+	doctrine:
+		driver: pdo_mysql
+		host: 127.0.0.1
+		user: root
+		password:
+		dbname:
+		metadata:
+			App: %appDir%
+
+
+# PART FOR DEVELOPMENT MODE
+development < common:
+	nette:
+		application:
+			debugger: true
+
+		routing:
+			debugger: true
+
+		security:
+			debugger: true
+
+		container:
+			debugger: true
+
+		debugger:
+			strictMode: TRUE
+			browser: google-chrome
+
+
+
+#PART FOR PRODUCTION MODE
+production < common:
+	nette:
+		debugger:
+			email: "ledvinka.vit@gmail.com"
+			strictMode: TRUE
+
+
+	doctrine:
+		host: 127.0.0.1
+		user: root
+		password:
+		dbname:

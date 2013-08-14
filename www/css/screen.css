@@ -1,0 +1,26 @@
+html, body {
+    padding-top: 10px;
+	padding-bottom: 0;
+}
+a[href^="error:"] {
+	background: red;
+	color: white;
+}
+form .required:after {
+	content: " *";
+	font-family: tahoma;
+	color: #942a25;
+}
+.text-right {
+	text-align: right !important;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-center {
+	text-align: center !important;
+}
+.ui-autocomplete-loading {
+	background: white url('/images/spinner.gif') right center no-repeat;
+}
+

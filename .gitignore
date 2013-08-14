@@ -1,0 +1,14 @@
+log/*
+temp/*
+vendor/*
+!vendor/others
+!vendor/autoload.php
+!temp/proxies
+temp/proxies/*
+.idea
+.DS_Store
+!.gitignore
+!.htaccess
+!web.config
+composer.lock
+app/config/config.local.neon

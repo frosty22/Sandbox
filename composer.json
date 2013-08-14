@@ -1,0 +1,40 @@
+{
+	"name": "frosty22/sandbox",
+	"description": "Pre-packaged Nette Framework project with Doctine 2, Kdyby components, basic configured structure for your application.",
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Vít Ledvinka",
+			"homepage": "http://www.frosty22.cz"
+		}
+	],
+	"require": {
+		"php": ">= 5.3.0",
+		"kdyby/bootstrap-form-renderer": "@stable",
+		"kdyby/doctrine": "@stable",
+		"kdyby/events": "@stable",
+		"kdyby/console": "@stable",
+		"nette/nette": "@stable",
+		"kdyby/forms-replicator": "@stable",
+		"foglcz/jsonrpc2": "@stable",
+		"nextras/forms": "@stable",
+		"o5/grido": "dev-master",
+		"beberlei/DoctrineExtensions": "@stable",
+		"kdyby/autowired": "@dev",
+		"vojtech-dobes/extensions-list": "@stable",
+
+		"flame/module-installer": "@dev",
+		"flame/modules": "@dev",
+
+		"frosty22/ale": "@dev",
+		"frosty22/entity-meta-reader": "@dev",
+		"frosty22/entity-viewer": "@dev",
+		"frosty22/grido-ext": "@dev",
+		"frosty22/nette-deploy-center": "@dev",
+		"frosty22/process-manager": "@dev"
+	},
+	"require-dev": {
+		"nette/tester": "@dev",
+		"janmarek/mockista": "@dev"
+	}
+}
