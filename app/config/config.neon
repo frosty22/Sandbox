@@ -15,8 +15,6 @@ common:
 	nette:
 		application:
 			errorPresenter: Error
-			mapping:
-				*: App\*Module\*Presenter
 
 		session:
 			expiration: 14 days
@@ -28,7 +26,7 @@ common:
 		events: Kdyby\Events\DI\EventsExtension
 		doctrine: Kdyby\Doctrine\DI\OrmExtension
 		replicator: Kdyby\Replicator\DI\ReplicatorExtension
-		#ale: Ale\DI\AleExtension
+		ale: Ale\DI\AleExtension
 
 
 	services:
@@ -37,6 +35,11 @@ common:
 			class: App\RouterFactory
 
 		router: @routerFactory::createRouter
+
+
+	ale:
+		mapping:
+			*: App\*Module\*Presenter
 
 
 	doctrine:
