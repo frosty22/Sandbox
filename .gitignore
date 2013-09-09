@@ -4,6 +4,7 @@ vendor/*
 !vendor/others
 !vendor/autoload.php
 !temp/proxies
+!temp/.htaccess
 temp/proxies/*
 .idea
 .DS_Store
