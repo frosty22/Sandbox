@@ -21,11 +21,11 @@ class RouterFactory
 	{
 		$router = new RouteList();
 
-		$admin = new RouteList("Admin");
+		$router[] = $admin = new RouteList("Admin");
 		$admin[] = new Route('admin/<presenter>/<action>', 'Homepage:default');
 
-		$front = new RouteList("Front");
-		$router[] = new Route('<presenter>/<action>', 'Homepage:default');
+		$router[] = $front = new RouteList("Front");
+		$front[] = new Route('<presenter>/<action>', 'Homepage:default');
 
 		return $router;
 	}
