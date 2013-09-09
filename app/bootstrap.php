@@ -21,7 +21,10 @@ $configurator = new \Nette\Config\Configurator();
 
 // Enable Nette Debugger for error visualisation & logging
 //$configurator->setDebugMode(TRUE);
-if (PHP_SAPI === "cli") $configurator->setDebugMode(TRUE);
+if (PHP_SAPI === "cli") {
+	$configurator->setDebugMode(TRUE);
+	$configurator->addParameters(array("environment" => $configurator::DEVELOPMENT));
+}
 $configurator->enableDebugger($logDir);
 
 
