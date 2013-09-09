@@ -12,4 +12,4 @@ temp/proxies/*
 !.htaccess
 !web.config
 composer.lock
-app/config/config.local.neon
+!app/config/config.local.neon
