@@ -13,3 +13,4 @@ temp/proxies/*
 !web.config
 composer.lock
 !app/config/config.local.neon
+tests/selenium/output/*

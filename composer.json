@@ -36,6 +36,7 @@
 	},
 	"require-dev": {
 		"nette/tester": "@dev",
-		"janmarek/mockista": "@dev"
+		"janmarek/mockista": "@dev",
+		"facebook/webdriver": "dev-master"
 	}
 }
