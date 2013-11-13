@@ -29,6 +29,7 @@ common:
 		annotation: Kdyby\Annotations\DI\AnnotationsExtension
 		doctrine: Kdyby\Doctrine\DI\OrmExtension
 		replicator: Kdyby\Replicator\DI\ReplicatorExtension
+		entityMetaReader: EntityMetaReader\DI\EntityMetaReaderExtension
 		ale: Ale\DI\AleExtension
 
 
