@@ -31,8 +31,7 @@
 		"frosty22/entity-meta-reader": "@dev",
 		"frosty22/entity-viewer": "@dev",
 		"frosty22/grido-ext": "@dev",
-		"frosty22/nette-deploy-center": "@dev",
-		"frosty22/process-manager": "@dev"
+		"frosty22/nette-deploy-center": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "@dev",
