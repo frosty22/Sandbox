@@ -31,11 +31,12 @@
 		"frosty22/entity-meta-reader": "@dev",
 		"frosty22/entity-viewer": "@dev",
 		"frosty22/grido-ext": "@dev",
-		"frosty22/nette-deploy-center": "@dev"
+		"frosty22/nette-deploy-center": "@dev",
+		"frosty22/composer-components": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "@dev",
 		"janmarek/mockista": "@dev",
-		"facebook/webdriver": "dev-master"
+		"facebook/webdriver": "@dev"
 	}
 }

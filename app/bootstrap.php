@@ -47,9 +47,8 @@ $configurator->addConfig(__DIR__ . '/config/config.local.neon', $configurator::N
 
 // ModulesInstaller
 $configFile = new Flame\Modules\Config\ConfigFile();
-$configFile->loadConfig(__DIR__ . "/config/modules.neon");
-
 $modulesInstaller = new \Flame\Modules\ModulesInstaller(new \Flame\Modules\DI\ConfiguratorHelper($configurator), $configFile);
+$modulesInstaller->addConfig(__DIR__ . "/config/config.neon");
 $modulesInstaller->register();
 
 
@@ -57,7 +56,6 @@ $modulesInstaller->register();
 $configurator->onCompile[] = function ($configurator, $compiler) {
 	$compiler->addExtension('extensions', new VojtechDobes\ExtensionsList);
 };
-
 
 
 return $configurator->createContainer();

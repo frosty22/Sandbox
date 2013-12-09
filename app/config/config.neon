@@ -4,6 +4,21 @@
 # If you don't protect this directory from direct web access, anybody will be able to see your passwords.
 # http://nette.org/security-warning
 #
+
+# INSTALLED MODULES
+modules:
+	twBootstrapRenderer: Kdyby\BootstrapFormRenderer\DI\RendererExtension
+	console: Kdyby\Console\DI\ConsoleExtension
+	events: Kdyby\Events\DI\EventsExtension
+	annotation: Kdyby\Annotations\DI\AnnotationsExtension
+	doctrine: Kdyby\Doctrine\DI\OrmExtension
+	replicator: Kdyby\Replicator\DI\ReplicatorExtension
+	entityMetaReader: EntityMetaReader\DI\EntityMetaReaderExtension
+	ale: Ale\DI\AleExtension
+
+
+
+# SHARE PART OF CONFIG
 common:
 	parameters:
 
@@ -20,17 +35,6 @@ common:
 
 		session:
 			expiration: 14 days
-
-
-	extensions:
-		twBootstrapRenderer: Kdyby\BootstrapFormRenderer\DI\RendererExtension
-		console: Kdyby\Console\DI\ConsoleExtension
-		events: Kdyby\Events\DI\EventsExtension
-		annotation: Kdyby\Annotations\DI\AnnotationsExtension
-		doctrine: Kdyby\Doctrine\DI\OrmExtension
-		replicator: Kdyby\Replicator\DI\ReplicatorExtension
-		entityMetaReader: EntityMetaReader\DI\EntityMetaReaderExtension
-		ale: Ale\DI\AleExtension
 
 
 	services:
@@ -52,6 +56,8 @@ common:
 
 	console:
 		url: "http://www.example.cz"
+
+
 
 # PART FOR DEVELOPMENT MODE
 development < common:
@@ -87,3 +93,4 @@ production < common:
 		user: root
 		password:
 		dbname:
+
