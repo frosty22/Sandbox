@@ -46,9 +46,8 @@ $configurator->addConfig(__DIR__ . '/config/config.local.neon', $configurator::N
 
 
 // ModulesInstaller
-$configFile = new Flame\Modules\Config\ConfigFile();
-$modulesInstaller = new \Flame\Modules\ModulesInstaller(new \Flame\Modules\DI\ConfiguratorHelper($configurator), $configFile);
-$modulesInstaller->addConfig(__DIR__ . "/config/config.neon");
+$modulesInstaller = new \Flame\Modules\ModulesInstaller(new \Flame\Modules\DI\ConfiguratorHelper($configurator));
+$modulesInstaller->addConfig(new \Flame\Modules\Config\NeonFile(__DIR__ . "/config/config.neon", $tempDir . "/cache"));
 $modulesInstaller->register();
 
 return $configurator->createContainer();
