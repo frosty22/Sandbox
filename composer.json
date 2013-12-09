@@ -22,7 +22,6 @@
 		"o5/grido": "dev-master",
 		"beberlei/DoctrineExtensions": "@stable",
 		"kdyby/autowired": "@dev",
-		"vojtech-dobes/extensions-list": "@stable",
 
 		"flame/module-installer": "@dev",
 		"flame/modules": "@dev",

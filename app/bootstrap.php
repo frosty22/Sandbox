@@ -51,11 +51,4 @@ $modulesInstaller = new \Flame\Modules\ModulesInstaller(new \Flame\Modules\DI\Co
 $modulesInstaller->addConfig(__DIR__ . "/config/config.neon");
 $modulesInstaller->register();
 
-
-// Extension list
-$configurator->onCompile[] = function ($configurator, $compiler) {
-	$compiler->addExtension('extensions', new VojtechDobes\ExtensionsList);
-};
-
-
 return $configurator->createContainer();
