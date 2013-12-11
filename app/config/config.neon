@@ -7,6 +7,7 @@
 
 # INSTALLED MODULES
 modules:
+	autowired: Kdyby\Autowired\DI\AutowiredExtension
 	twBootstrapRenderer: Kdyby\BootstrapFormRenderer\DI\RendererExtension
 	console: Kdyby\Console\DI\ConsoleExtension
 	events: Kdyby\Events\DI\EventsExtension
@@ -15,7 +16,7 @@ modules:
 	replicator: Kdyby\Replicator\DI\ReplicatorExtension
 	entityMetaReader: EntityMetaReader\DI\EntityMetaReaderExtension
 	ale: Ale\DI\AleExtension
-
+	components: ComposerComponents\DI\InstallerExtension
 
 
 # SHARE PART OF CONFIG
@@ -53,6 +54,7 @@ common:
 		dbname:
 		metadata:
 			App: %appDir%
+
 
 	console:
 		url: "http://www.example.cz"

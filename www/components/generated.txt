@@ -1,0 +1,1 @@
+All files in the folder are generated base on Composer Components installs.
