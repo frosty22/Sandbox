@@ -8,7 +8,6 @@
 # INSTALLED MODULES
 modules:
 	autowired: Kdyby\Autowired\DI\AutowiredExtension
-	twBootstrapRenderer: Kdyby\BootstrapFormRenderer\DI\RendererExtension
 	console: Kdyby\Console\DI\ConsoleExtension
 	events: Kdyby\Events\DI\EventsExtension
 	annotation: Kdyby\Annotations\DI\AnnotationsExtension
